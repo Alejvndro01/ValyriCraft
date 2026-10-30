@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "valyricraft",
+	"version": "${version}",
+	"name": "ValyriCraft",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/valyricraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.valyricraft.ValyriCraft"
+		],
+		"fabric-datagen": [
+			"com.valyricraft.ValyriCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"valyricraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
